@@ -4,24 +4,13 @@ import de.devoxx4kids.dronecontroller.listener.EventListener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-
 import java.lang.invoke.MethodHandles;
-import java.math.BigDecimal;
-import java.math.MathContext;
-import java.math.RoundingMode;
-
 import static de.devoxx4kids.dronecontroller.command.PacketType.DATA_LOW_LATENCY;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.util.function.Consumer;
-import java.util.logging.Level;
 import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageInputStream;
 
 /**
  * <p>
