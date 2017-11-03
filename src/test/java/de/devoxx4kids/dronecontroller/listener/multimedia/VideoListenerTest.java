@@ -1,5 +1,6 @@
 package de.devoxx4kids.dronecontroller.listener.multimedia;
 
+import java.awt.image.BufferedImage;
 import org.junit.gen5.api.BeforeEach;
 import org.junit.gen5.api.Test;
 
@@ -8,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.function.Consumer;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -26,7 +28,12 @@ class VideoListenerTest {
     @BeforeEach
     void initialize() {
 
-        sut = VideoListener.videoListener();
+        sut = VideoListener.videoListener(new Consumer<BufferedImage>() {
+			@Override
+			public void accept(BufferedImage t) {
+				//do nothing (I do not understand how this test work)
+			}
+		});
     }
 
 
