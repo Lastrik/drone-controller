@@ -117,7 +117,7 @@ public class WirelessLanDroneConnection implements DroneConnection {
             (only) PCmds need to send a continuous stream of commands to keep the drone busy for that time
 		 */
 		if (command instanceof Pcmd) {
-			LOGGER.debug("putting Pcmd's into queue {} for time {}", command, waitingTime);
+			LOGGER.debug("sending Pcmd's to drone {} ", command);
 
 			while (waitingTime > 0) { // generate enough Pcmds for the expected waiting time. Also, do not remove that loop, the drone will execute the first command again and again
 				Command newCommand = ((Pcmd) command).clone((waitingTime > maxWaitingTime) ? maxWaitingTime : waitingTime);
@@ -135,7 +135,7 @@ public class WirelessLanDroneConnection implements DroneConnection {
 				waitingTime = waitingTime - maxWaitingTime;
 			}
 		} else {
-			LOGGER.debug("putting command into queue {}", command);
+			LOGGER.debug("sending command to drone directly {}", command);
 //			if (command instanceof CommonCommand) {
 //				commonCommandQueue.offer(command);
 //			} else {
