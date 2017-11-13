@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.devoxx4kids</groupId>
-    <artifactId>dronecontroller</artifactId>
-    <version>0.2.0</version>
+    <groupId>com.github.Lastrik</groupId>
+    <artifactId>drone-controller</artifactId>
+    <version>0.3.0</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Library to remote control drones</description>
@@ -25,6 +25,10 @@
             <email>Tobias.Schneider@Tobsch.org</email>
             <organizationUrl>http://tobsch.org</organizationUrl>
         </developer>
+        <developer>
+            <name>Lastrik</name>
+            <email>lastrik@protonmail.ch</email>
+        </developer>
     </developers>
 
     <properties>
@@ -40,9 +44,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git@github.com:Devoxx4KidsDE/drone-controller.git</connection>
-        <developerConnection>scm:git:git@github.com:Devoxx4KidsDE/drone-controller.git</developerConnection>
-        <url>git@github.com:Devoxx4KidsDE/drone-controller.git</url>
+        <connection>scm:git:git@github.com:Lastrik/drone-controller.git</connection>
+        <developerConnection>scm:git:git@github.com:Lastrik/drone-controller.git</developerConnection>
+        <url>git@github.com:Lastrik/drone-controller.git</url>
     </scm>
 
     <distributionManagement>
