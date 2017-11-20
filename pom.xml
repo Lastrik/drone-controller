@@ -6,7 +6,7 @@
 
     <groupId>com.github.Lastrik</groupId>
     <artifactId>drone-controller</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Library to remote control drones</description>
